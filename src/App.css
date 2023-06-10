@@ -1,38 +1,43 @@
-.App {
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("https://codecanyon.img.customer.envatousercontent.com/files/382231196/preview.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=480d1dc02ad251141e3db927eb2e1759");
+  background-size: cover;
+  background-position: center;
+}
+
+form{
+  background-color: white;
+  padding: 0px 60px;
+  border-radius: 10px;
+}
+
+h1{
+  color: rgb(77,1,77);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: rebeccapurple;
   color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+input:invalid[focused="true"]{
+  border: 1px solid red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:invalid[focused="true"] ~ span{
+  display: block;
 }
