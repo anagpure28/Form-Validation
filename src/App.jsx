@@ -63,6 +63,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    alert("Form submitted successfully!!")
   };
 
   const onChange = (e) => {
